@@ -1,12 +1,10 @@
-
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FEE9F0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fee9f0;
   font-size: 16px;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,32 +21,31 @@ body {
   letter-spacing: 1px;
 }
 
-
 .card__header {
   height: 215px;
   overflow: hidden;
   position: relative;
 }
 
-.card__header img{
+.card__header img {
   width: 100%;
 }
 
 .card__header::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
   background: rgba(71, 32, 84, 0.2);
 }
 
-.card__body{
+.card__body {
   position: relative;
 }
-.card__body::before{
-  content: '';
+.card__body::before {
+  content: "";
   position: absolute;
   top: -35px;
   left: -50px;
@@ -57,16 +54,14 @@ body {
   width: 120%;
   display: block;
   transform: rotate(10deg);
-   
 }
 
-.card__content{
+.card__content {
   position: relative;
   padding: 0 20px;
-  
 }
 
-.card__title p{
+.card__title p {
   font-size: 0.8rem;
 }
 
@@ -80,10 +75,10 @@ body {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.filter-btn span i{
+.filter-btn span i {
   width: 40px;
   height: 40px;
-  background: #FA396B;
+  background: #fa396b;
   display: block;
   position: absolute;
   right: 25px;
@@ -95,8 +90,8 @@ body {
   font-size: 1rem;
   z-index: 999;
 }
-span.toggle-btn:hover{
-      cursor: pointer;
+span.toggle-btn:hover {
+  cursor: pointer;
 }
 .filter-btn a {
   position: absolute;
@@ -110,24 +105,24 @@ span.toggle-btn:hover{
   color: #fff;
   z-index: 99;
   font-size: 1.2rem;
-  transition: all .4s cubic-bezier(.68, 1, .265, 1)
+  transition: all 0.4s cubic-bezier(0.68, 1, 0.265, 1);
 }
 
 .filter-btn:after {
   height: 150px;
-    width: 150px;
-    content: '';
-    background-color: #FA396B;
-    position: absolute;
-    top: -86px;
-    right: -35px;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: all 0.3s ease-in-out 0s;
+  width: 150px;
+  content: "";
+  background-color: #fa396b;
+  position: absolute;
+  top: -86px;
+  right: -35px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.filter-btn.open span.toggle-btn i{
-  background-color: #DE3963;
+.filter-btn.open span.toggle-btn i {
+  background-color: #de3963;
 }
 
 .filter-btn .fa-times {
@@ -167,43 +162,40 @@ span.toggle-btn:hover{
 }
 
 /* Add */
-.card__add{
-
-    /* background: #DE3963; */
-    display: flex;
+.card__add {
+  /* background: #DE3963; */
+  display: flex;
   position: relative;
-  
+
   margin-top: 5px;
 }
 .card__add input {
   width: 100%;
-    height: 40px;
-    /* float: left; */
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
-    text-indent: 18px;
-    /* padding: 0 60px 0 0; */
-    background: rgba(222, 57, 99, 0.6);
-    /* border-radius: 3px; */
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border: 0px;
-    box-shadow: none;
-    outline: none;
- 
-} 
+  height: 40px;
+  /* float: left; */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  /* padding: 0 60px 0 0; */
+  background: rgba(222, 57, 99, 0.6);
+  /* border-radius: 3px; */
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+}
 
-.card__add input::placeholder{
+.card__add input::placeholder {
   color: #fff;
 }
 
-.card__add button{
- 
+.card__add button {
   border: none;
   border-radius: 50%;
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   /* width: 40px;
   height: 40px; */
@@ -211,20 +203,18 @@ span.toggle-btn:hover{
   cursor: pointer;
   outline: none;
 }
-.card__add i{
+.card__add i {
   width: 40px;
   height: 40px;
   border-radius: 25px;
   background: #fff;
   line-height: 40px;
-  color: #DE3963;
-
+  color: #de3963;
 }
 
 /* Todo list */
 ul.todo {
   list-style: none;
-  
 }
 ul.todo li {
   display: flex;
@@ -238,11 +228,11 @@ ul.todo li {
   border-radius: 5px;
   box-shadow: 0px 0px 2px rgba(44, 62, 80, 0.3);
   margin: 0 0 10px 0;
-  padding: 0 10px; 
+  padding: 0 10px;
   word-break: break-word;
 }
 
-ul.todo#todo{
+ul.todo#todo {
   padding-top: 30px;
 }
 ul.todo#completed {
@@ -251,7 +241,7 @@ ul.todo#completed {
 }
 
 ul.todo#completed:before {
-  content: '';
+  content: "";
   width: 150px;
   height: 1px;
   background: #d8e5e0;
@@ -264,14 +254,13 @@ ul.todo#completed:before {
 }
 
 ul.todo#todo:empty:after {
-  content: 'You have nothing to-do!';
+  content: "You have nothing to-do!";
   margin: 15px 0 0 0;
 }
 
 ul.todo#completed:empty:after {
-  content: 'You have yet to complete any tasks.';
+  content: "You have yet to complete any tasks.";
 }
-
 
 ul.todo#todo:after,
 ul.todo#completed:after {
@@ -292,39 +281,38 @@ ul.todo li .buttons button {
   padding: 5px 0 5px 5px;
   font-size: 1rem;
 }
-ul.todo li .buttons .remove{
+ul.todo li .buttons .remove {
   color: #aaa;
 }
-ul.todo li .buttons .remove:hover{
-  color: #FA396B;
+ul.todo li .buttons .remove:hover {
+  color: #fa396b;
 }
 
-ul.todo li .buttons .complete{
+ul.todo li .buttons .complete {
   color: #aaa;
-  
 }
 
-ul.todo li .buttons .complete:hover{
+ul.todo li .buttons .complete:hover {
   color: #25b99a;
 }
 
-ul.todo#todo li .buttons .complete .fas{
+ul.todo#todo li .buttons .complete .fas {
   display: none;
 }
 
-ul.todo#todo li .buttons .complete .far{
+ul.todo#todo li .buttons .complete .far {
   display: block;
 }
 
-ul.todo#completed li .buttons .complete .fas{
+ul.todo#completed li .buttons .complete .fas {
   display: block;
   color: #25b99a;
 }
 
-ul.todo#completed li .buttons .complete .far{
+ul.todo#completed li .buttons .complete .far {
   display: none;
 }
 
-ul.todo#completed span{
+ul.todo#completed span {
   color: #25b99a;
 }
