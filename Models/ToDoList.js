@@ -16,17 +16,7 @@ class TodoList {
     }
   }
 
-  addTaskElement(task) {
-    const taskNode = document.createElement("li");
-    taskNode.innerHTML = `
-      <span>${task.title}</span>
-      <div class="buttons">
-        <button class="far fa-check-circle complete"></button>
-        <button class="far fa-trash-alt remove"></button>
-      </div>
-    `;
-    this.list.appendChild(taskNode);
-  }
+  removeTask(task) {}
 }
 
 /* 
