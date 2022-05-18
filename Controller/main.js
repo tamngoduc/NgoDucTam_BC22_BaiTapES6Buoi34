@@ -1,5 +1,5 @@
-import Task from "./Task.js";
-import TodoList from "./ToDoList.js";
+import Task from "../Models/Task.js";
+import TodoList from "../Models/ToDoList.js";
 
 const list = document.getElementById("todo");
 
