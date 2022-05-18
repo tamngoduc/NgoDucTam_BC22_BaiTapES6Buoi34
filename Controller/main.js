@@ -8,8 +8,13 @@ const todoList = new TodoList(list);
 console.log(todoList);
 
 function addTask() {
-  const title = document.getElementById("newTask").value;
-  console.log(title);
+  const title = document.getElementById("newTask");
+  const task = todoList.addTask(title.value.trim());
+  console.log(typeof task);
+  console.log(todoList.tasks);
+  todoList.addTaskElement(task);
+  title.value = "";
+  title.focus();
 }
 
 document.getElementById("addItem").addEventListener("click", addTask);
